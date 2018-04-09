@@ -14,6 +14,10 @@ class ArtistsController < ApplicationController
     redirect_to artist_path(@artist)
   end
 
+  def edit
+    @artist = Artist.find_by(params[:id])
+  end
+
   def update
   end
 
