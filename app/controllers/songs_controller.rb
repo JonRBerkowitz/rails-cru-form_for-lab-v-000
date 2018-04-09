@@ -1,6 +1,5 @@
 class SongsController < ApplicationController
 
-  class songsController < ApplicationController
     def index
       @song = Song.all
     end
@@ -36,8 +35,5 @@ class SongsController < ApplicationController
       params.require(:song).permit(*args)
     end
 
-
   end
 
-
-end
